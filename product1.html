@@ -3,40 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starter 产品详情</title>
+    <title>Starter 方案详情</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a class="brand" href="index.html">Nova 产品展示</a>
-      </div>
-    </header>
-
-    <main class="container detail-main">
-      <a class="btn back-btn" href="index.html">返回首页</a>
-
-      <article class="detail-card">
-        <h1>Starter</h1>
-
-        <div class="product-image" role="img" aria-label="Starter 产品图片占位区域">
-          Starter 图片占位区域
+  <body class="theme-starter">
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a class="brand" href="index.html">NovaFlow</a>
+          <nav class="topnav" aria-label="详情页导航">
+            <a href="index.html#solutions">方案</a>
+            <a href="index.html#scenarios">场景</a>
+            <a href="index.html#workflow">流程</a>
+            <a href="index.html#contact">联系</a>
+          </nav>
+          <a class="btn btn-ghost btn-small" href="index.html">返回首页</a>
         </div>
+      </header>
 
-        <p class="detail-desc">
-          Starter 是一款面向个人和初创用户的入门产品，帮助你用更低成本建立完整工作流程。
-        </p>
+      <main class="detail-main">
+        <section class="detail-hero">
+          <div class="container detail-hero-grid">
+            <article class="detail-hero-copy">
+              <a class="detail-breadcrumb" href="index.html">回到产品体验中心</a>
+              <p class="detail-tag">Starter</p>
+              <h1>先把页面从“能看”提升到“像一个完整产品”。</h1>
+              <p class="hero-lead">
+                Starter 适合想快速提升页面质感的项目。它不追求过多复杂配置，
+                而是优先把主屏、卖点、卡片和行动路径整理到位。
+              </p>
 
-        <h2 class="features-title">产品特点</h2>
-        <ul class="feature-list">
-          <li>上手简单，10 分钟内完成基础配置</li>
-          <li>界面清晰，适合零基础用户快速学习</li>
-          <li>提供稳定核心功能，满足日常场景</li>
-        </ul>
+              <div class="detail-actions">
+                <a class="btn" href="#starter-modules">查看模块</a>
+                <a class="btn btn-secondary" href="index.html#contact">预约演示</a>
+              </div>
 
-        <button class="btn" type="button">立即咨询</button>
-      </article>
-    </main>
+              <div class="detail-quick-stats">
+                <article class="quick-stat">
+                  <strong data-count="10" data-suffix=" 天">0</strong>
+                  <span>常见改造周期</span>
+                </article>
+                <article class="quick-stat">
+                  <strong data-count="5" data-suffix=" 个">0</strong>
+                  <span>基础展示模块</span>
+                </article>
+                <article class="quick-stat">
+                  <strong data-count="1" data-suffix=" 套">0</strong>
+                  <span>轻量视觉风格</span>
+                </article>
+              </div>
+            </article>
+
+            <aside class="detail-hero-card">
+              <div>
+                <p class="detail-tag">适合对象</p>
+                <h2>小团队、个人项目、快速提案页</h2>
+                <p>
+                  如果你现在只有基础列表和详情页，Starter 是最直接的升级路径。
+                </p>
+              </div>
+
+              <div class="pill-list">
+                <span>主屏升级</span>
+                <span>卡片重做</span>
+                <span>响应式适配</span>
+                <span>基础交互</span>
+              </div>
+
+              <a class="btn-link" href="product2.html">需要更强转化能力？看 Pro</a>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="starter-modules">
+          <div class="container detail-grid">
+            <article class="detail-panel">
+              <p class="detail-tag">核心模块</p>
+              <h2>Starter 包含的页面能力</h2>
+
+              <div class="detail-feature-grid">
+                <article class="detail-feature">
+                  <h3>品牌主屏</h3>
+                  <p>通过标题、说明、按钮和视觉块，让首页不再显得空。</p>
+                </article>
+                <article class="detail-feature">
+                  <h3>方案卡片</h3>
+                  <p>把产品卡片改成更完整的模块，能承载摘要、标签和行动。</p>
+                </article>
+                <article class="detail-feature">
+                  <h3>基础指标</h3>
+                  <p>加入数据卡片和轻量动画，让页面更有“产品感”。</p>
+                </article>
+                <article class="detail-feature">
+                  <h3>详情页补全</h3>
+                  <p>不再只有图片占位，而是把功能、节奏和适用对象说清楚。</p>
+                </article>
+              </div>
+            </article>
+
+            <aside class="detail-panel">
+              <p class="detail-tag">交付清单</p>
+              <h2>适合快速落地</h2>
+              <ul class="detail-spec-list">
+                <li>首页完整视觉层次</li>
+                <li>基础详情页结构</li>
+                <li>统一按钮、卡片、排版规范</li>
+                <li>移动端单列适配</li>
+                <li>简洁、轻量、低维护成本</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section-alt">
+          <div class="container">
+            <article class="detail-banner">
+              <div>
+                <p class="detail-tag">适用场景</p>
+                <h2>更适合“先建立完整页面感”的阶段</h2>
+                <p>
+                  例如作品展示页、新产品发布页、初版官网首页，或者需要尽快给客户看一个
+                  “像样版本”的场景。
+                </p>
+              </div>
+              <div class="pill-list">
+                <span>提案页</span>
+                <span>新品页</span>
+                <span>官网初版</span>
+                <span>单品展示</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="detail-tag">适合谁用</p>
+              <h2>Starter 更适合这两类团队</h2>
+            </div>
+
+            <div class="audience-grid">
+              <article class="audience-card">
+                <h3>内容还不多的项目</h3>
+                <p>你需要的不是超级复杂的系统，而是先把页面质感和阅读顺序建立起来。</p>
+              </article>
+              <article class="audience-card">
+                <h3>想快速出结果的小团队</h3>
+                <p>开发量可控，维护简单，适合边做边补内容。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt">
+          <div class="container">
+            <div class="section-heading">
+              <p class="detail-tag">推进节奏</p>
+              <h2>Starter 常见上线节奏</h2>
+            </div>
+
+            <div class="timeline compact">
+              <article class="timeline-item">
+                <span class="timeline-index">01</span>
+                <h3>整理现有内容</h3>
+                <p>保留已有信息，先把重要内容归位。</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-index">02</span>
+                <h3>重建首页结构</h3>
+                <p>加入主屏、卡片、指标和基础说明模块。</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-index">03</span>
+                <h3>同步详情页</h3>
+                <p>避免首页升级后，详情页体验还停留在旧状态。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <article class="detail-promo">
+              <div>
+                <p class="detail-tag">下一档升级</p>
+                <h2>如果你还需要更强的模块化和转化能力，继续看 Pro。</h2>
+                <p>
+                  Pro 会增加场景切换、案例结果、FAQ 和更完整的产品叙事结构。
+                </p>
+              </div>
+              <a class="btn" href="product2.html">查看 Pro</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <strong>Starter</strong>
+            <p>轻量升级，但体验不再单薄。</p>
+          </div>
+          <span>NovaFlow Product Detail</span>
+        </div>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>

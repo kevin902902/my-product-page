@@ -3,47 +3,431 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>产品列表页</title>
+    <title>NovaFlow 产品体验中心</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a class="brand" href="index.html">Nova 产品展示</a>
-      </div>
-    </header>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a class="brand" href="index.html">NovaFlow</a>
+          <nav class="topnav" aria-label="主导航">
+            <a href="#solutions">方案</a>
+            <a href="#capabilities">能力</a>
+            <a href="#scenarios">场景</a>
+            <a href="#workflow">流程</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <a class="btn btn-ghost btn-small" href="#contact">预约演示</a>
+        </div>
+      </header>
 
-    <main class="container page-main">
-      <section class="hero">
-        <h1>产品列表页</h1>
-        <p>
-          这里共有 <span id="productCount">3</span> 款产品，点击卡片按钮可进入详情页。
-        </p>
-      </section>
+      <main>
+        <section class="hero" id="top">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">产品体验中台</p>
+              <h1>把普通商品页，升级成真正能转化的品牌前端。</h1>
+              <p class="hero-lead">
+                NovaFlow 面向产品展示、销售线索和品牌表达，提供更完整的信息层级、
+                更强的视觉叙事和更清晰的模块组织。
+              </p>
 
-      <section class="product-grid">
-        <article class="product-card">
-          <p class="card-tag">产品 01</p>
-          <h2>Starter</h2>
-          <p>适合个人用户，帮助你快速启动和验证创意。</p>
-          <a class="btn" href="product1.html">查看详情</a>
-        </article>
+              <div class="hero-actions">
+                <a class="btn" href="#solutions">查看方案矩阵</a>
+                <a class="btn btn-secondary" href="#results">看案例数据</a>
+              </div>
 
-        <article class="product-card">
-          <p class="card-tag">产品 02</p>
-          <h2>Pro</h2>
-          <p>面向进阶需求，提供更高效率与稳定体验。</p>
-          <a class="btn" href="product2.html">查看详情</a>
-        </article>
+              <div class="hero-metrics">
+                <article class="metric-card">
+                  <strong data-count="92" data-suffix="%">0</strong>
+                  <span>首屏信息完成度</span>
+                </article>
+                <article class="metric-card">
+                  <strong data-count="3" data-suffix=" 套">0</strong>
+                  <span>可扩展产品层级</span>
+                </article>
+                <article class="metric-card">
+                  <strong data-count="21" data-suffix=" 天">0</strong>
+                  <span>典型项目上线周期</span>
+                </article>
+              </div>
+            </div>
 
-        <article class="product-card">
-          <p class="card-tag">产品 03</p>
-          <h2>Enterprise</h2>
-          <p>适用于团队协作场景，具备更强的扩展能力。</p>
-          <a class="btn" href="product3.html">查看详情</a>
-        </article>
-      </section>
-    </main>
+            <div class="hero-stage" aria-label="视觉展示区">
+              <div class="stage-card stage-card-main">
+                <p class="stage-label">体验指数</p>
+                <h2>多模块叙事</h2>
+                <p>
+                  从产品卡片、能力矩阵到案例与 FAQ，让用户在一个页面内完成认知、
+                  对比和行动。
+                </p>
+              </div>
+
+              <div class="orbital-panel">
+                <div class="orbit-ring"></div>
+                <div class="orbit-node orbit-node-a">Starter</div>
+                <div class="orbit-node orbit-node-b">Pro</div>
+                <div class="orbit-node orbit-node-c">Enterprise</div>
+                <div class="orbit-core">Nova</div>
+              </div>
+
+              <div class="stage-card stage-card-side">
+                <p class="stage-label">信息结构</p>
+                <ul class="stage-list">
+                  <li>视觉主屏</li>
+                  <li>方案矩阵</li>
+                  <li>行业场景</li>
+                  <li>案例结果</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip">
+          <div class="container trust-strip-inner">
+            <span class="trust-title">适合这些前端展示目标</span>
+            <div class="trust-items" aria-label="适用方向">
+              <span>品牌官网</span>
+              <span>SaaS 产品页</span>
+              <span>营销落地页</span>
+              <span>企业解决方案页</span>
+              <span>商品专题页</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="solutions">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">方案矩阵</p>
+              <h2>当前共有 <span id="productCount">0</span> 套产品方案</h2>
+              <p>
+                每套方案都保留统一的设计语言，但在深度、交付能力和适用团队规模上逐级增强。
+              </p>
+            </div>
+
+            <div class="product-grid">
+              <article class="product-card">
+                <p class="product-label">方案 01</p>
+                <h3>Starter</h3>
+                <p class="product-summary">
+                  为轻量展示和快速上线准备，优先解决“页面不够完整、不够精致”的问题。
+                </p>
+                <ul class="product-points">
+                  <li>更清晰的主屏与卖点结构</li>
+                  <li>适合个人项目和小型团队</li>
+                  <li>部署节奏快，改造成本低</li>
+                </ul>
+                <div class="product-footer">
+                  <span>适合 1-5 人团队</span>
+                  <a class="btn btn-inline" href="product1.html">查看详情</a>
+                </div>
+              </article>
+
+              <article class="product-card product-card-featured">
+                <p class="product-label">方案 02</p>
+                <h3>Pro</h3>
+                <p class="product-summary">
+                  在展示之外加入更多模块化叙事与交互，适合需要比较强转化能力的页面。
+                </p>
+                <ul class="product-points">
+                  <li>产品矩阵与行业内容并行展示</li>
+                  <li>加入数据、案例与 FAQ 模块</li>
+                  <li>支持更复杂的信息层级</li>
+                </ul>
+                <div class="product-footer">
+                  <span>适合增长型团队</span>
+                  <a class="btn btn-inline" href="product2.html">查看详情</a>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <p class="product-label">方案 03</p>
+                <h3>Enterprise</h3>
+                <p class="product-summary">
+                  面向复杂业务和多角色沟通，强调系统性、可信度与长期扩展能力。
+                </p>
+                <ul class="product-points">
+                  <li>更适合企业方案和多页面产品线</li>
+                  <li>支持复杂权限、服务与交付叙事</li>
+                  <li>适配更长决策链路</li>
+                </ul>
+                <div class="product-footer">
+                  <span>适合中大型组织</span>
+                  <a class="btn btn-inline" href="product3.html">查看详情</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="capabilities">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">核心能力</p>
+              <h2>不只是换个颜色，而是把页面结构做完整</h2>
+              <p>
+                这次改造重点放在信息组织、视觉节奏、组件密度和行动路径，而不是只做表层美化。
+              </p>
+            </div>
+
+            <div class="capability-grid">
+              <article class="capability-card">
+                <h3>品牌主屏</h3>
+                <p>强化首屏层级，增加 CTA、数据卡与视觉锚点。</p>
+              </article>
+              <article class="capability-card">
+                <h3>产品矩阵</h3>
+                <p>把方案差异说清楚，减少用户来回跳转理解成本。</p>
+              </article>
+              <article class="capability-card">
+                <h3>场景切换</h3>
+                <p>用 Tab 组织不同业务场景，让内容更多但不显乱。</p>
+              </article>
+              <article class="capability-card">
+                <h3>结果展示</h3>
+                <p>加入数据、案例和评价，提升页面可信度。</p>
+              </article>
+              <article class="capability-card">
+                <h3>响应式布局</h3>
+                <p>在桌面端保持冲击力，移动端仍然保证可读与可点。</p>
+              </article>
+              <article class="capability-card">
+                <h3>轻交互增强</h3>
+                <p>通过计数动画、导航高亮和 FAQ 展开补足页面活性。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="scenarios">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">行业场景</p>
+              <h2>同一套设计语言，可以承载不同业务叙事</h2>
+              <p>下面是三个常见场景，你可以继续在这套结构上扩展自己的内容。</p>
+            </div>
+
+            <div class="tabs" role="tablist" aria-label="行业场景">
+              <button class="tab-button is-active" type="button" data-tab="retail" role="tab" aria-selected="true">
+                新消费品牌
+              </button>
+              <button class="tab-button" type="button" data-tab="saas" role="tab" aria-selected="false">
+                SaaS 产品
+              </button>
+              <button class="tab-button" type="button" data-tab="industry" role="tab" aria-selected="false">
+                企业服务
+              </button>
+            </div>
+
+            <div class="scenario-panels">
+              <article class="scenario-panel is-active" data-panel="retail">
+                <div>
+                  <p class="scenario-kicker">新消费品牌</p>
+                  <h3>强调视觉气质、爆品表达和快速购买决策。</h3>
+                  <p>
+                    页面可以突出产品故事、核心卖点、口碑反馈和限时活动，让视觉和转化并行。
+                  </p>
+                </div>
+                <ul class="scenario-list">
+                  <li>适合做专题页、上新页和系列集合页</li>
+                  <li>重点模块：主屏、卖点卡、口碑区、FAQ</li>
+                  <li>页面风格更轻快，节奏更直接</li>
+                </ul>
+              </article>
+
+              <article class="scenario-panel" data-panel="saas" hidden>
+                <div>
+                  <p class="scenario-kicker">SaaS 产品</p>
+                  <h3>强调功能结构、效率提升和团队协作价值。</h3>
+                  <p>
+                    更适合用模块化区块去解释产品能力、接入方式、交付流程和不同版本差异。
+                  </p>
+                </div>
+                <ul class="scenario-list">
+                  <li>适合首页、产品页、解决方案页联动</li>
+                  <li>重点模块：方案矩阵、能力块、案例数据</li>
+                  <li>页面风格更理性，强调可用性与可信度</li>
+                </ul>
+              </article>
+
+              <article class="scenario-panel" data-panel="industry" hidden>
+                <div>
+                  <p class="scenario-kicker">企业服务</p>
+                  <h3>强调长期合作、系统兼容和多角色决策沟通。</h3>
+                  <p>
+                    适合加入交付边界、实施方法、服务流程和行业适配说明，让复杂方案也能读得顺。
+                  </p>
+                </div>
+                <ul class="scenario-list">
+                  <li>适合企业官网、解决方案页和招投标展示页</li>
+                  <li>重点模块：流程、服务清单、案例结果、FAQ</li>
+                  <li>页面风格更稳重，结构更系统化</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="workflow">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">改造流程</p>
+              <h2>从简单页面到完整前端，一般会经历这 4 步</h2>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-item">
+                <span class="timeline-index">01</span>
+                <h3>重做信息架构</h3>
+                <p>先决定页面到底要讲什么，再决定视觉怎么做。</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-index">02</span>
+                <h3>建立设计语言</h3>
+                <p>统一颜色、层次、卡片、按钮和区块节奏。</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-index">03</span>
+                <h3>补内容密度</h3>
+                <p>加入指标、案例、场景、流程和 FAQ，让页面更完整。</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-index">04</span>
+                <h3>增强交互反馈</h3>
+                <p>用少量动画和切换，提升浏览节奏和感知品质。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="results">
+          <div class="container">
+            <div class="result-card">
+              <div class="result-copy">
+                <p class="eyebrow">案例结果</p>
+                <h2>从“只有 3 张卡片”到“能讲清楚产品价值”的首页形态</h2>
+                <p>
+                  这次版本把首页从单纯列表升级成带品牌主屏、方案矩阵、行业场景、
+                  改造流程、案例和 FAQ 的展示型前端。
+                </p>
+              </div>
+
+              <div class="result-metrics">
+                <article>
+                  <strong data-count="6" data-suffix="+">0</strong>
+                  <span>新增内容模块</span>
+                </article>
+                <article>
+                  <strong data-count="3" data-suffix=" 个">0</strong>
+                  <span>重做详情页</span>
+                </article>
+                <article>
+                  <strong data-count="100" data-suffix="%">0</strong>
+                  <span>移动端适配覆盖</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">用户反馈</p>
+              <h2>更复杂，但不更乱</h2>
+            </div>
+
+            <div class="testimonial-grid">
+              <article class="testimonial-card">
+                <p>
+                  “信息终于不挤在一屏里了。现在用户能明显看懂不同版本的差别。”
+                </p>
+                <span>增长负责人</span>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  “页面更像一个完整产品站，而不是几个商品标题加按钮的拼接。”
+                </p>
+                <span>品牌设计师</span>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  “增加模块后，反而更好扩展了，因为结构已经被搭起来了。”
+                </p>
+                <span>前端开发</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="faq">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">FAQ</p>
+              <h2>常见问题</h2>
+            </div>
+
+            <div class="faq-list">
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="true">
+                  这次改造主要做了什么？
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    重点不是简单“换皮”，而是补齐首页结构、视觉系统、详情页深度和基础交互。
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  以后还能继续加模块吗？
+                </button>
+                <div class="faq-answer" hidden>
+                  <p>
+                    可以。现在的布局已经是模块化结构，后续继续加案例、价格、博客或表单都会比较顺。
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  详情页为什么也一起重做了？
+                </button>
+                <div class="faq-answer" hidden>
+                  <p>
+                    如果首页更完整，但详情页还停留在占位状态，整体体验会断层，所以这次一起补齐。
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cta-section" id="contact">
+          <div class="container cta-card">
+            <div>
+              <p class="eyebrow">下一步</p>
+              <h2>如果你还想再往上做，可以继续加真实图片、表单和后台数据。</h2>
+            </div>
+            <a class="btn" href="product2.html">先看 Pro 方案</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <strong>NovaFlow</strong>
+            <p>更完整的产品展示，更清晰的前端叙事。</p>
+          </div>
+          <span>Static Frontend Experience Demo</span>
+        </div>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>
